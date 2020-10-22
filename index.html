@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title> HTML a Secas</title>
+<link rel="stylesheet" href="Estilos.css">
 </head>
 <body>
 <h2>HTML a Secas</h2>
@@ -198,7 +199,9 @@ Ejemplo:
     </ul>
     <p><img src="Proyectoinicial/enlaces.jpg" alt="enlace"></p>
 </section>
-<h2>Anclas</h2>
+
+<section>
+    <h2>Anclas</h2>
 <p>&lt;a name=&quot;nombre&quot;&gt;Texto&lt;/a&gt;</p>
 <p>Las "anclas" so marcas específicas incluidas en el interior de un documento para indicar el comienzo de una sección o bloque de contenido:</p>
 <p><b>&lt;a name=&quot;nombre&quot;&gt;Texto&lt;/a&gt;</b></p>
@@ -206,9 +209,96 @@ Ejemplo:
     <li>El "nombre" tiene que ser unico para cada marca</li>
     <li>La etiqueta no tiene ningún efecto visible sobre el texto</li>
 
-    <p>&lt;a href=&quot;#nombreAncla&quot;&gt;Texto&lt;/a&gt; &rarr;  &lt;a name=&quot;nombreAncla&quot;&gt;Texto&lt;/a&gt; </p>
     </ul>
     <p><img src="Proyectoinicial/ancla.jpg" alt="ancla"></p>
+
+    <p>&lt;a href=&quot;#nombreAncla&quot;&gt;Texto&lt;/a&gt; &rarr;  &lt;a name=&quot;nombreAncla&quot;&gt;Texto&lt;/a&gt; </p>
+</section>
+
+
+    <section>
+        <p>Enlaces a puntos internos de otro documento</p>
+            <ul>
+                <li>&lt;a href=&quot;URI&quot;&gt;Texto&lt;/a&gt;</li>
+                <li>Donde nombre es un "ancla" en el documento de dirección URI</li>
+                <li>Si se accede a la página enlazada, el navegador se situán en el punto indicado por la marca "nombre"</li>
+                
+                </ul>
+                
+                <p><img src="Proyectoinicial/ancla2.jpg" alt="ancla2"/> </p>
+
+                <p>&lt;a href=&quot;#nombrePagina#nombreAncla&quot;&gt;Texto&lt;/a&gt; &rarr;  &lt;a name=&quot;nombreAncla&quot;&gt;Texto&lt;/a&gt; </p>
+    </section>
+    <div>
+        <p>Ejemplo:</p>
+        <a href="https://www.w3schools.com/tags/tag_a.asp">Visit W3Schools.com!</a>
+    </div>
+
+    <section>
+        <h2>Imagenes</h2>
+        <p>&lt;IMG src=&quot;URL&quot;/&gt;</p>
+
+        <ul>
+            
+            <li>Inclusión de una imagen:&lt;IMG src=&quot;URL&quot;/&gt; (no tiene etiqueta de cierre)</li>
+            <li>La dirección de la imagen enlazada se resulve teniendo en cuenta el valor de la dirección del atributo "src". Los formatos de imagen usuales son GIF, JPG, o PNG.</li>
+            <p>Atributos de esta etiqueta</p>
+            <ul>
+                <ul>
+                <li>Alternativa para navegadores no gráficos o error en la localización de la imagen: alt="texto".</li>
+                <li>Muy buenos resultados en el posicionamiento junto al atributo tittle="titulo imagen".</li>
+                <li>Borde: border="pixels"</li>
+                <li>Anchura: width="longitud"</li>
+                <li>Altura: height="longitud"</li>
+                </ul>
+                <P>Es muy frecuente utilizar imágens activas que enlazan a otros documentos</P>
+                <p>Esto se consigue combinando las etiquetas  &lt;A...&gt; e &lt;IMG...&gt; de la seguiente forma:</p>
+               
+
+                &lt;a href=&quot;URI&quot;&gt;&lt;IMG src="URI-imagen"/&gt;&lt;A...&gt;
+                <ul>
+                    <li>En este caso se incluye un borde azul de 1 pixel de ancho, para quitar este borde hay que incluir el atributo border="0" en la etiqueta IMG.</li>
+                </ul>
+            </section>
+
+            </ul>
+            <p>Ejemplo: Visite nuestro centro! </p>
+            <a href="https://www.imf-formacion.com/"><img src="Proyectoinicial/IMFLOGO.jpg" /> </a>
+            
+            <section>
+                <h2>Tablas</h2>
+                <p>&lt;TABLE&gt; Estructura &gt;&lt;/TABLE&gt;</p>
+    
+                <ul>
+                    <li>La Estructura de la tabla está formada por tres tipos de elementos</li>
+                    <li>Filas: &gt;&lt;TR&gt;Celdas &gt;&lt;/TR&gt; </li>
+                    <li>Celdas de encabezado: &gt;&lt;TH&gt;Texto &gt;&lt;TH&gt;</li>
+                    <li>Celdas normales: &gt;&lt;TD&gt;Texto &gt;&lt;TD&gt;</li>
+                    
+                    </ul>
+                    <p>Atributos de la etiqueta &lt;TABLE&gt; </p>
+                    <p>Bordes de la celdas: border="pixels"</p>
+                    <table >
+                        <caption><p>&lt;TABLE&gt;</p>
+                            <p>&lt;TR&gt;</p>
+                        </caption>
+                        
+
+                        <tr> <th>&lt;TD&gt;&lt;/TD&gt;</th> <th>&lt;TD&gt;&lt;/TD&gt;<p>&lt;TR&gt;</p></th> <th>&lt;TD&gt;&lt;/TD&gt;</th>
+                            
+
+                        </tr>
+                        <tr> <td>Arándano</td> <td>49</td> <td>0.2</td>
+                        
+                        </tr>
+
+                        <tr> <td>Plátano</td> <td>90</td> <td>0.3</td>
+                        
+                        </tr>
+
+                        </table>
+                </section>
+            
 
 </body>
 </html>
