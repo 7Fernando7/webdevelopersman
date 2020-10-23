@@ -9,17 +9,15 @@ td {
   background: rgb(73, 72, 72);
   color: white;
   height: 80px;
+  max-width: 2400px;
 }
 #main-header a {
   color: white;
 }
 
-/*
- * Logo
- */
 #logo-header {
   float: left;
-  padding: 15px 0 0 20px;
+  padding: 2px 0 0 2px;
   text-decoration: none;
 }
 #logo-header:hover {
@@ -34,7 +32,7 @@ td {
 
 #logo-header .site-desc {
   display: block;
-  font-weight: 300;
+  font-weight: 10;
   font-size: 0.8em;
   color: #999;
 }
