@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title> HTML a Secas</title>
-<link rel="stylesheet" href="Estilos.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title> HTML a Secas</title>
+        <link rel="stylesheet" href="Estilos.css">
+        </head>
 <body>
+    <header id="main-header">
+		
+		<a id="logo-header" href="Proyectoinicial/Recurso 14@3x.png">
+			<span class="site-name">Fernando Paiva</span>
+			<span class="site-desc">WebDeveloperMan</span>
+		</a> <!-- / #logo-header -->
+
+		<nav>
+			<ul>
+				<li><a href="#">Inicio:</a></li>
+				<li><a href="#">Acerca de mí:</a></li>
+				<li><a href="#">Contacto:</a></li>
+			</ul>
+		</nav><!-- / nav -->
+
+	</header><!-- / #main-header -->
 <h2>HTML a Secas</h2>
 <p>En todo documento HTML se distinguen en dos tipos de elementos</p>
 <p>Etiquetas: Indican como se ha de organizar el contenido del documento</p>
@@ -18,7 +34,7 @@ Ejemplo:
 <p>
     &lt;p class="normal"&gt;Esto es un párrafo&lt;/p&gt;
 </p>
-<p>Ejemplo de una página web:</p>
+<p class ="importante">Ejemplo de una página web:</p>
 <img src="Proyectoinicial/Ejemplopagina.jpg" alt="Ejemplo">
 <h2>Estructura de un documento HTML</h2>
 <section>
@@ -93,14 +109,6 @@ Ejemplo:
 <p>HTML cuenta con seis diferentes niveles de encabezados, h1 el más importante y el h6 el menos.</p>
 
 <p>&lt;h1&gt;Esto es un texto de título.&lt;/h1&gt;</p>
-<section>
-    <h2>Titular de nivel 1</h2>
-    <h1>Titular de nivel 2</h1>
-    <h3>Titular de nivel 3</h3>
-    <h4>Titular de nivel 4</h4>
-</section>
-
-
 
 <p><img src="Proyectoinicial/titularnivel.jpg" alt="titular"></p>
     
@@ -286,8 +294,31 @@ Ejemplo:
         <tr><td>&lt;TD&gt;&lt;/TD&gt;</td> <td>&lt;TD&gt;&lt;/TD&gt;<p>&lt;TR&gt;</p></td> <td>&lt;TD&gt;&lt;/TD&gt;</td></tr>
         <tr><th><p></p></th><th><p>&lt;/TR&gt;</p><p>&lt;/TABLE&gt;</p></th><th><p></p></th></tr>
 </table>
-</section>
-            
 
+<p>Las celdas pueden ocupar más de una fila o columna</p>
+<p><strong>Atributos de las etiquetas &lt;DT&gt;&lt; y &lt;TH&gt;&lt;</strong></p>
+<p>Ocupar más de una columna: colspan="numero"</p>
+<p>Ocupar más de una fila: rowspan="numero"</p>
+
+<p><strong>Observaciones</strong></p>
+<p>Siempre desde la celda en la que se indica el atributo y haca la derecha(para las columnas) o hacia abajo (para las filas)</p>
+<p>Se puede combinar la expansión por filas y por columnas</p>
+<p>Se generan errores si dos expansiones ocupan una misma celda</p>
+</section>
+<div id="change">
+    <p>&lt;TABLE border="1"&gt;</p>
+    <p>&lt;TR&gt;&lt;TD&gt;A&lt;/TD&gt; &lt;TD colspan="2"&gt;B&lt;/TD&gt;&lt;/TR&gt;</p>
+    <p>&lt;TR&gt;&lt;TD&gt;C&lt;/TD&gt; &lt;TD&gt;D&lt;/TD&gt;</p>
+        <p>&lt;TD rowspan="2"&gt;E&lt;/TD&gt;&lt;/TR&gt;</p>
+    <p>&lt;TR&gt;&lt;TD colspan="2"&gt;F&lt;/TD&gt;&lt;/TR&gt;</p>
+    <p>&lt;/TABLE&gt;</p>
+</div>
+
+      
+            
+<footer id="main-footer">
+    <p>&copy; 2020 <a href="">Fernando Paiva</a></p>
+</footer> <!-- / #main-footer -->
 </body>
+
 </html>
