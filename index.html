@@ -36,7 +36,10 @@ Ejemplo:
     &lt;p class="normal"&gt;Esto es un párrafo&lt;/p&gt;
 </p>
 <p class ="importante">Ejemplo de una página web:</p>
-<img src="Proyectoinicial/Ejemplopagina.jpg" alt="Ejemplo">
+<div class="central">
+    <img src="Proyectoinicial/Ejemplopagina.jpg" alt="Ejemplo">
+</div>
+
 <h2>Estructura de un documento HTML</h2>
 <section>
     <p>&lt;HTML&gt;</p>
@@ -55,7 +58,8 @@ Ejemplo:
     <p><b>Cabecera:</b> &lt;HEAD&gt; ... &lt;/HEAD&gt;</p>
     <p><b>Cuerpo:</b> &lt;BODY&gt; ... &lt;/BODY&gt;</p>
 
-    <p><img src="Proyectoinicial/HTML.Eje.jpg" alt="html"></p>
+    <div class="central"><img src="Proyectoinicial/HTML.Eje.jpg" alt="html"></div>
+    
     <p><b>&lt;HTML&gt;:</b> indica el comienzo y el final de un docum/ento HTML. Todo lo que se coloque fuera de la etiqueta &lt;html&gt; se ignora, salvo alguna excepción.</p>
     <p><b>&lt;HEAD&gt;:</b> es la cabecera del documento. La cabecera contiene información sobre el propio documento HTML, el título y el idioma de la página. Los contenido indicados en la cabecera no son visibles para el usuario, con la excepción de la etiqueta &lt;title&gt;.</p>
     <p><b>&lt;/BODY&gt;:</b> es el cuerpo del documento HTML. El cuerpo encierra todos los contenidos que muestran al usuario(párrafos de texto, imágenes, tablas).</p>
@@ -110,8 +114,8 @@ Ejemplo:
 <p>HTML cuenta con seis diferentes niveles de encabezados, h1 el más importante y el h6 el menos.</p>
 
 <p>&lt;h1&gt;Esto es un texto de título.&lt;/h1&gt;</p>
+<div class="central"><img src="Proyectoinicial/titularnivel.jpg" alt="titular"></div>
 
-<p><img src="Proyectoinicial/titularnivel.jpg" alt="titular"></p>
     
 </section>
 <section>
@@ -206,7 +210,8 @@ Ejemplo:
         <li>El color del elmento activo Texto varía en función de si la página ya ha sido visitada por el navegador o no</li>
         <li>Si se accede a la página enlazada, el navegador se situá al comienzo de la misma</li>
     </ul>
-    <p><img src="Proyectoinicial/enlaces.jpg" alt="enlace"></p>
+    <div class="central"><img src="Proyectoinicial/enlaces.jpg" alt="enlace"></div>
+    
 </section>
 
 <section>
@@ -219,7 +224,8 @@ Ejemplo:
     <li>La etiqueta no tiene ningún efecto visible sobre el texto</li>
 
     </ul>
-    <p><img src="Proyectoinicial/ancla.jpg" alt="ancla"></p>
+    <div class="central"><img src="Proyectoinicial/ancla.jpg" alt="ancla"></div>
+    
 
     <p>&lt;a href=&quot;#nombreAncla&quot;&gt;Texto&lt;/a&gt; &rarr;  &lt;a name=&quot;nombreAncla&quot;&gt;Texto&lt;/a&gt; </p>
 </section>
@@ -233,8 +239,8 @@ Ejemplo:
                 <li>Si se accede a la página enlazada, el navegador se situán en el punto indicado por la marca "nombre"</li>
                 
                 </ul>
+                <div class="central"><img src="Proyectoinicial/ancla2.jpg" alt="ancla2"/> </div>
                 
-                <p><img src="Proyectoinicial/" alt="ancla2"/> </p>
 
                 <p>&lt;a href=&quot;#nombrePagina#nombreAncla&quot;&gt;Texto&lt;/a&gt; &rarr;  &lt;a name=&quot;nombreAncla&quot;&gt;Texto&lt;/a&gt; </p>
     </section>
@@ -271,6 +277,7 @@ Ejemplo:
             </section>
 
             </ul>
+            
             <p>Ejemplo: Visite nuestro centro! </p>
             <a href="https://www.imf-formacion.com/"><img src="Proyectoinicial/IMFLOGO.jpg" /> </a>
             
@@ -286,15 +293,18 @@ Ejemplo:
 </ul>
 <p>Atributos de la etiqueta &lt;TABLE&gt; </p>
 <p>Bordes de la celdas: border="pixels"</p>
-<table >
-    <caption><b><p>&lt;TABLE&gt;</p>
-     <p>&lt;TR&gt;</p></b>
-    </caption>
-        <tr> 
-        <td>&lt;TD&gt;&lt;/TD&gt;</td> <td>&lt;TD&gt;&lt;/TD&gt;<p>&lt;TR&gt;</p></td> <td>&lt;TD&gt;&lt;/TD&gt;</td></tr>
-        <tr><td>&lt;TD&gt;&lt;/TD&gt;</td> <td>&lt;TD&gt;&lt;/TD&gt;<p>&lt;TR&gt;</p></td> <td>&lt;TD&gt;&lt;/TD&gt;</td></tr>
-        <tr><th><p></p></th><th><p>&lt;/TR&gt;</p><p>&lt;/TABLE&gt;</p></th><th><p></p></th></tr>
-</table>
+<div class="central">
+    <table >
+        <caption><b><p>&lt;TABLE&gt;</p>
+         <p>&lt;TR&gt;</p></b>
+        </caption>
+            <tr> 
+            <td>&lt;TD&gt;&lt;/TD&gt;</td> <td>&lt;TD&gt;&lt;/TD&gt;<p>&lt;TR&gt;</p></td> <td>&lt;TD&gt;&lt;/TD&gt;</td></tr>
+            <tr><td>&lt;TD&gt;&lt;/TD&gt;</td> <td>&lt;TD&gt;&lt;/TD&gt;<p>&lt;TR&gt;</p></td> <td>&lt;TD&gt;&lt;/TD&gt;</td></tr>
+            <tr><th><p></p></th><th><p>&lt;/TR&gt;</p><p>&lt;/TABLE&gt;</p></th><th><p></p></th></tr>
+    </table>
+</div>
+
 
 <p>Las celdas pueden ocupar más de una fila o columna</p>
 <p><strong>Atributos de las etiquetas &lt;DT&gt;&lt; y &lt;TH&gt;&lt;</strong></p>
@@ -306,16 +316,18 @@ Ejemplo:
 <p>Se puede combinar la expansión por filas y por columnas</p>
 <p>Se generan errores si dos expansiones ocupan una misma celda</p>
 </section>
-<div id="change">
-    <p>&lt;TABLE border="1"&gt;</p>
-    <p>&lt;TR&gt;&lt;TD&gt;A&lt;/TD&gt; &lt;TD colspan="2"&gt;B&lt;/TD&gt;&lt;/TR&gt;</p>
-    <p>&lt;TR&gt;&lt;TD&gt;C&lt;/TD&gt; &lt;TD&gt;D&lt;/TD&gt;</p>
-        <p>&lt;TD rowspan="2"&gt;E&lt;/TD&gt;&lt;/TR&gt;</p>
-    <p>&lt;TR&gt;&lt;TD colspan="2"&gt;F&lt;/TD&gt;&lt;/TR&gt;</p>
-    <p>&lt;/TABLE&gt;</p>
-</div>      
-
+<div class="central">
+    <div id="change">
+        <p>&lt;TABLE border="1"&gt;</p>
+        <p>&lt;TR&gt;&lt;TD&gt;A&lt;/TD&gt; &lt;TD colspan="2"&gt;B&lt;/TD&gt;&lt;/TR&gt;</p>
+        <p>&lt;TR&gt;&lt;TD&gt;C&lt;/TD&gt; &lt;TD&gt;D&lt;/TD&gt;</p>
+            <p>&lt;TD rowspan="2"&gt;E&lt;/TD&gt;&lt;/TR&gt;</p>
+        <p>&lt;TR&gt;&lt;TD colspan="2"&gt;F&lt;/TD&gt;&lt;/TR&gt;</p>
+        <p>&lt;/TABLE&gt;</p>
+    </div> 
 </div>
+     
+
 <footer id="main-footer">
     <p>&copy; 2020 <a href="">Fernando Paiva</a></p>
 </footer> <!-- / #main-footer -->

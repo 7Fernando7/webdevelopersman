@@ -3,41 +3,186 @@
     <head>
         <meta charset="UTF-8">
         <title> HTML5 y CSS3</title>
-        <link rel="stylesheet" href="Estilos.css">
+        <link rel="stylesheet" href="Estilohtml5.css">
         </head>
-<body>
-    <header id="main-header">
-		
-		<a id="logo-header" href="Proyectoinicial/logo1.jpg">
-			<span class="site-name">Fernando Paiva</span><br/>
-			<span class="site-desc">WebDeveloperMan</span>
-		</a> <!-- / #logo-header -->
-
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">Acerca de mí:</a></li>
-				<li><a href="#">Contacto:</a></li>
-			</ul>
-		</nav><!-- / nav -->
-
-    </header><!-- / #main-header -->
-    <h1>HTML5 y CSS3</h1>
-    <p><strong>INTRODUCCIÓN</strong></p>
-    <P>HTML5 es la actualización de HTML, el lenguaje en el que es creada la web. HTML5 también es un termino de marketing para agrupar las nuevas tecnologías de desarrollo de aplicaciones web: HTML5, CSS3 y nuevas capacidades de Javascript.</P>
-    <P>La versión anterior y más usada de HTML, HTML4, carece de características necesarias para la creación de aplicaciones modernas basadas en un navegador. </P>
-    <p>Flash en especial ha sido usado en reemplazo de HTML para desarrollar web apps que superan las habilidades de un navegador: Audio, video, webcams, micrófonos, datos binarios, animaciones vectoriales, componentes de interfaz complejos, entre muchas otras cosas. Ahora HTML5 es capaz de hacer esto sin necesidad de plugins y con una gran compatibilidad entre navegadores.</p>
-    <table>
-        <tr>
-          <td>A</td>
-          
-        </tr>
         
-        <tr>
-          <td>C</td>
-          <td>C</td>
-        </tr>
-        </table>
+        <body>
+            <header id="main-header">
+            
+            <a id="logo-header" href="Proyectoinicial/logo1.jpg">
+              <span class="site-name">Fernando Paiva</span><br/>
+              <span class="site-desc">WebDeveloperMan</span>
+            </a> <!-- / #logo-header -->
+        
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Acerca de mí:</a></li>
+                <li><a href="#">Contacto:</a></li>
+              </ul>
+            </nav><!-- / nav -->
+        
+            </header><!-- / #main-header -->
+            <div class="container">
+            
+            <h1>HTML5 y CSS3</h1>
+            <p><strong>INTRODUCCIÓN</strong></p>
+            <P>HTML5 es la actualización de HTML, el lenguaje en el que es creada la web. HTML5 también es un termino de marketing para agrupar las nuevas tecnologías de desarrollo de aplicaciones web: HTML5, CSS3 y nuevas capacidades de Javascript.</P>
+            <P>La versión anterior y más usada de HTML, HTML4, carece de características necesarias para la creación de aplicaciones modernas basadas en un navegador. </P>
+            <p>Flash en especial ha sido usado en reemplazo de HTML para desarrollar web apps que superan las habilidades de un navegador: Audio, video, webcams, micrófonos, datos binarios, animaciones vectoriales, componentes de interfaz complejos, entre muchas otras cosas. Ahora HTML5 es capaz de hacer esto sin necesidad de plugins y con una gran compatibilidad entre navegadores.</p>
+            <h2>ESTRUCTURA DEL DOCUMENTO</h2>
+            <div class="tablecontainer">
+              <table id="mainTable">
+                <tr>
+                  
+                  <td colspan=3>&lt;Header&gt;</td>
+                  
+                </tr>
+                <tr>
+                  
+                  <td rowspan=1>&lt;nav&gt;</td>
+                  <td rowspan=1>&lt;Section&gt;
+                    <table>
+                      <tr> 
+                        <td>&lt;header&gt;</td>
+                      </tr>
+                        <tr><td>&lt;article&gt;</td>
+                        
+                        <tr><td>&lt;footer&gt;</td></tr>
+                                  
+                        </table>
+                      </td>
+                  <td rowspan=1>&lt;aside&gt;</td>
+                  
+                    </tr>
+                  
+                  <td colspan=3>&lt;footer&gt;</td>
+                </tr>
+              </table>
+            </div>
+            
+            <P>En HTML 5 usaremos como referencia una nueva estructura de elementos que cambiarán la manera de elaborar el contenido (sobre todo de blogs) y la manera en que buscadores lo analizan.</P>
+            <h2>Nuevas etiquetas</h2>
+            <p><strong>&lt;header&gt;</strong> está diseñada para reemplazar las necesidad de crear divs sin significado semántico.</p>
+            <p><strong>&lt;hgroup&gt;</strong> permite colocar un h1, h2, h3 dentro del header sin afectar el SEO, permitiendo usar otro h1 en el sitio.<br/>
+            En el HTML actual, sólo puedes usar h1 una sola vez por sitio o el h1 pierde prioridad de SEO.</p>
+            <p><strong>&lt;nav&gt;</strong> Igual que&lt;header&gt;,&lt;nav&gt; está diseñado para que ahí coloques la botonera de navegación principal. Puedes colocar cualquier etiqueta dentro, aunque lo recomendado es usar listas &lt;ul&gt;</p>
+            <p><strong>&lt;section&gt;</strong> Define un área de contenido única dentro del sitio. En un blog, sería la zona donde están todos los posts. En un video de youtube, habría un section para el video, uno para los datos del video, otro para la zona de comentarios.</p>
+            <h2>Nuevas etiquetas II</h2>
+        
+            <p><strong>&lt;article&gt;</strong> Define zonas únicas de contenido independiente. En el home de un blog, cada post sería un article..</p>
+            <p><strong>&lt;aside&gt;</strong> Cualquier contenido que no esté relacionado con el objetivo primario de la página va en un aside. En un blog, obviamente el aside es la barra lateral de información.<br/>
+            En el home de un periódico, puede ser el área de indicadores económicos, bibliografía, fuentes...</p>
+            <p><strong>&lt;footer&gt;</strong> Este es obvio. Es el pie de página y todo lo que lo compone.</p>
+        
+            <p class="atencion"> Atención el&lt;div&gt;no está muerto:</p>
+            <p>Estas nuevas etiquetas no significan que ya no se use &lt;div&gt;. Div siempre debe usarse cuando necesites una caja con objetivos de diseño grafico o cualquier cosa que no tenga significado semántico. Sólo usa etiquetas semánticas de HTML5 donde sean necesarias. </p>
+            <h2>Ejemplo de BODY en una página HTML 5</h2>
+            <div class="estructura">
+              <p class="red"><strong>&lt;header&gt;</strong><br/>
+                <p class="indent1 red"><strong>&lt;hgroup&gt;</strong><br/>
+                     <p class="indent3"><strong>&lt;h1&gt;</strong>El blog de mlw.io<strong>&lt;/h1&gt;</strong>
+                      <p class="indent3"><strong>&lt;h2&gt;</strong>Este es el blog de Mejorando la web<strong>&lt;/h2&gt;</strong>
+                <p class="indent1 red"><strong>&lt;/hgroup&gt;</strong>
+              <p class="red"><strong>&lt;/header&gt;</strong><br/>
+                <p class="red"><strong>&lt;nav&gt;</strong><br/>
+                  <p>Aquí va la botonera de navegación.</p>
+                <p class="red"><strong>&lt;/nav&gt;</strong><br/>
+                  <p class="red"><strong>&lt;section&gt;</strong><br/>
+                    <p class="indent1 red"><strong>&lt;hgroup&gt;</strong><br/>
+                         <p class="indent3"><strong>&lt;article&gt;</strong>Aquí va un post, con su titulo en h2<strong>&lt;/article&gt;</strong><br/>
+                          <p class="indent3"><strong>&lt;article&gt;</strong>Aquí va un post, con su titulo en h2<strong>&lt;/article&gt;</strong><br/>
+                            <p class="indent3"><strong>&lt;article&gt;</strong>Aquí va un post, con su titulo en h2<strong>&lt;/article&gt;</strong><br/>
+                    <p class="indent1 red"><strong>&lt;/hgroup&gt;</strong><br/>
+                  <p class="red"><strong>&lt;/section&gt;</strong><br/>
+                <p class="red"><strong>&lt;aside&gt;</strong><br/>
+                    <p>Barra lateral, como cuentas de twitter, facebook, post viejos, etc.</p>
+                <p class="red"><strong>&lt;/aside&gt;</strong><br/>
+                  <p class="red"><strong>&lt;footer&gt;</strong><br/>
+                    <p>Pie de pagina, amenazas de copyright, etc.</p>
+                  <p class="red"><strong>&lt;/footer&gt;</strong><br/>
+                    <h2>Nuevas etiquetas III</h2>
+                    <p>Las etiquetas semánticas, a pesar de ser claves para posicionamento en buscadores y buen desarrollo web, no son la razón por la que todo el mundo habla de HTML5. Video, audio y animación vectorial están en la lista de prioridades y en la boca de todas las personas que evangelizan su uso.<br/>
+                    Especificamente, las nuevas etiquetas son:</p>
+                    <p><strong>&lt;video&gt;</strong> Inserta video sin necesidad de plugins.</p>
+                    <p><strong>&lt;audio&gt;</strong> Lo mismo que video, pero sin video.</p>
+                    <p><strong>&lt;input*&gt;</strong> Input ya existía como la etiqueta para insertar cajas de texto y botones. Ahora es más poderosa.</p>
+                    <p><strong>&lt;canvas&gt;</strong> Un área de dibujo vectorial y de bitmaps con Javascript.</p>
+                    <p><strong>&lt;svg&gt;</strong> Una etiqueta, igual que&lt;img&gt;, para insertar dibujos y animaciones vectoriales al estilo de Flash.</p>
+            </div>
+        <p class="atencion"> Las veremos mas detalladamente en un rato</p>
+        <h2>Compatibilidad con navegadores</h2>
+        <p>HTML5 trae al mundo del desarrollo web habilidades que, siendo el 2010, era casi vergonzoso no tener. Cosas como &lt;video&gt;,&lt;canvas&gt; eran más que necesarias. sin embargo, no es el primer gran cambio de internt.<br/>
+        La primera gran evolución del desarrollo web vino en el 2004 con Gmail, al traer a la luz el objeto XmlHttpRequest, más conocido como AJAX.</p>
+        <p>Lo que pocos saben es que AJAX fue creado por Microsoft para Internet Explorer 5 en 1999. Sí, el navegador responsable de detener la innovación más importante sin la cual, cosas como gmail, Facebook, Google Maps o quizás Twitter, habrían sido inviables.</p>     
+        <p>Internet Explorer, claro, es también la rázon de la poca adopción de HTML5. sin embargo, hay formas de que las etiquetas semánticas de HTML5 y atributos de CSS3 funcione en IE.</p>
+        <h2>Compatibilidad HTML5 en el Explorer</h2>
+        <p>HTML5 Enabling Script: Permite usar las etiquetas semanticas dentro de IE6, 7 y 8 como si fueran divs normales, estilizables por CSS. Sin este script, las etiquetas son ignoradas en IE y es imposible agregarles diseños a ellas o cualquier elemento dentro de ellas.</p>  
+        <p>Para utilizarlo debes incluir esta línea en el HEAD de tu documento.</p>
+        <div class="azul"> 
+          <p>&lt;!--[if It IE 9]&gt;</p>
+          <p >&lt;script src="http://HTML5shim.googlecode.com/svn/trunk/HTML5.js"&gt;</p>
+          <p ></p>&lt;/script&gt;</p>
+          <p>&lt;![endif]-->&gt;</p></div>
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+
     <footer id="main-footer">
         <p>&copy; 2020 <a href="">Fernando Paiva</a></p>
     </footer> <!-- / #main-footer -->
