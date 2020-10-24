@@ -7,7 +7,7 @@ body {
   margin: 0 0 10px;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
   padding: 10px;
@@ -64,26 +64,6 @@ td {
   color: white;
 }
 
-#logo-header {
-  float: left;
-  padding: 2px 0 0 2px;
-  text-decoration: none;
-}
-#logo-header:hover {
-  color: #0b76a6;
-}
-
-#logo-header .site-name {
-  display: block;
-  font-weight: 700;
-  font-size: 1.2em;
-}
-
-#logo-header .site-desc {
-  display: block;
-  font-weight: 10;
-  font-size: 0.8em;
-  color: #999;
 }
 #main-footer {
   background: rgb(73, 72, 72);
