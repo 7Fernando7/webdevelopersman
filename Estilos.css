@@ -7,10 +7,13 @@ body {
   margin: 0 0 10px;
 }
 .container {
-  width: 980px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
   padding: 10px;
+}
+img {
+  max-width: 100%;
 }
 
 .central {
