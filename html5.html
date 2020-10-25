@@ -1,149 +1,301 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title> HTML5 y CSS3</title>
-        <link rel="stylesheet" href="Estilohtml5.css">
-        </head>
-        
-        <body>
-            <header id="main-header">
-            
-            <a id="logo-header" href="Proyectoinicial/logo1.jpg">
-              <span class="site-name">Fernando Paiva</span><br/>
-              <span class="site-desc">WebDeveloperMan</span>
-            </a> <!-- / #logo-header -->
-        
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Acerca de mí:</a></li>
-                <li><a href="#">Contacto:</a></li>
-              </ul>
-            </nav><!-- / nav -->
-        
-            </header><!-- / #main-header -->
-            <div class="container">
-            
-            <h1>HTML5 y CSS3</h1>
-            <p><strong>INTRODUCCIÓN</strong></p>
-            <P>HTML5 es la actualización de HTML, el lenguaje en el que es creada la web. HTML5 también es un termino de marketing para agrupar las nuevas tecnologías de desarrollo de aplicaciones web: HTML5, CSS3 y nuevas capacidades de Javascript.</P>
-            <P>La versión anterior y más usada de HTML, HTML4, carece de características necesarias para la creación de aplicaciones modernas basadas en un navegador. </P>
-            <p>Flash en especial ha sido usado en reemplazo de HTML para desarrollar web apps que superan las habilidades de un navegador: Audio, video, webcams, micrófonos, datos binarios, animaciones vectoriales, componentes de interfaz complejos, entre muchas otras cosas. Ahora HTML5 es capaz de hacer esto sin necesidad de plugins y con una gran compatibilidad entre navegadores.</p>
-            <h2>ESTRUCTURA DEL DOCUMENTO</h2>
-            <div class="tablecontainer">
-              <table id="mainTable">
-                <tr>
-                  
-                  <td colspan=3>&lt;Header&gt;</td>
-                  
-                </tr>
-                <tr>
-                  
-                  <td rowspan=1>&lt;nav&gt;</td>
-                  <td rowspan=1>&lt;Section&gt;
-                    <table>
-                      <tr> 
-                        <td>&lt;header&gt;</td>
-                      </tr>
-                        <tr><td>&lt;article&gt;</td>
-                        
-                        <tr><td>&lt;footer&gt;</td></tr>
-                                  
-                        </table>
-                      </td>
-                  <td rowspan=1>&lt;aside&gt;</td>
-                  
-                    </tr>
-                  
-                  <td colspan=3>&lt;footer&gt;</td>
-                </tr>
-              </table>
-            </div>
-            
-            <P>En HTML 5 usaremos como referencia una nueva estructura de elementos que cambiarán la manera de elaborar el contenido (sobre todo de blogs) y la manera en que buscadores lo analizan.</P>
-            <h2>Nuevas etiquetas</h2>
-            <p><strong>&lt;header&gt;</strong> está diseñada para reemplazar las necesidad de crear divs sin significado semántico.</p>
-            <p><strong>&lt;hgroup&gt;</strong> permite colocar un h1, h2, h3 dentro del header sin afectar el SEO, permitiendo usar otro h1 en el sitio.<br/>
-            En el HTML actual, sólo puedes usar h1 una sola vez por sitio o el h1 pierde prioridad de SEO.</p>
-            <p><strong>&lt;nav&gt;</strong> Igual que&lt;header&gt;,&lt;nav&gt; está diseñado para que ahí coloques la botonera de navegación principal. Puedes colocar cualquier etiqueta dentro, aunque lo recomendado es usar listas &lt;ul&gt;</p>
-            <p><strong>&lt;section&gt;</strong> Define un área de contenido única dentro del sitio. En un blog, sería la zona donde están todos los posts. En un video de youtube, habría un section para el video, uno para los datos del video, otro para la zona de comentarios.</p>
-            <h2>Nuevas etiquetas II</h2>
-        
-            <p><strong>&lt;article&gt;</strong> Define zonas únicas de contenido independiente. En el home de un blog, cada post sería un article..</p>
-            <p><strong>&lt;aside&gt;</strong> Cualquier contenido que no esté relacionado con el objetivo primario de la página va en un aside. En un blog, obviamente el aside es la barra lateral de información.<br/>
-            En el home de un periódico, puede ser el área de indicadores económicos, bibliografía, fuentes...</p>
-            <p><strong>&lt;footer&gt;</strong> Este es obvio. Es el pie de página y todo lo que lo compone.</p>
-        
-            <p class="atencion"> Atención el&lt;div&gt;no está muerto:</p>
-            <p>Estas nuevas etiquetas no significan que ya no se use &lt;div&gt;. Div siempre debe usarse cuando necesites una caja con objetivos de diseño grafico o cualquier cosa que no tenga significado semántico. Sólo usa etiquetas semánticas de HTML5 donde sean necesarias. </p>
-            <h2>Ejemplo de BODY en una página HTML 5</h2>
-            <div class="estructura">
-              <p class="red"><strong>&lt;header&gt;</strong><br/>
-                <p class="indent1 red"><strong>&lt;hgroup&gt;</strong><br/>
-                     <p class="indent3"><strong>&lt;h1&gt;</strong>El blog de mlw.io<strong>&lt;/h1&gt;</strong>
-                      <p class="indent3"><strong>&lt;h2&gt;</strong>Este es el blog de Mejorando la web<strong>&lt;/h2&gt;</strong>
-                <p class="indent1 red"><strong>&lt;/hgroup&gt;</strong>
-              <p class="red"><strong>&lt;/header&gt;</strong><br/>
-                <p class="red"><strong>&lt;nav&gt;</strong><br/>
-                  <p>Aquí va la botonera de navegación.</p>
-                <p class="red"><strong>&lt;/nav&gt;</strong><br/>
-                  <p class="red"><strong>&lt;section&gt;</strong><br/>
-                    <p class="indent1 red"><strong>&lt;hgroup&gt;</strong><br/>
-                         <p class="indent3"><strong>&lt;article&gt;</strong>Aquí va un post, con su titulo en h2<strong>&lt;/article&gt;</strong><br/>
-                          <p class="indent3"><strong>&lt;article&gt;</strong>Aquí va un post, con su titulo en h2<strong>&lt;/article&gt;</strong><br/>
-                            <p class="indent3"><strong>&lt;article&gt;</strong>Aquí va un post, con su titulo en h2<strong>&lt;/article&gt;</strong><br/>
-                    <p class="indent1 red"><strong>&lt;/hgroup&gt;</strong><br/>
-                  <p class="red"><strong>&lt;/section&gt;</strong><br/>
-                <p class="red"><strong>&lt;aside&gt;</strong><br/>
-                    <p>Barra lateral, como cuentas de twitter, facebook, post viejos, etc.</p>
-                <p class="red"><strong>&lt;/aside&gt;</strong><br/>
-                  <p class="red"><strong>&lt;footer&gt;</strong><br/>
-                    <p>Pie de pagina, amenazas de copyright, etc.</p>
-                  <p class="red"><strong>&lt;/footer&gt;</strong><br/>
-                    <h2>Nuevas etiquetas III</h2>
-                    <p>Las etiquetas semánticas, a pesar de ser claves para posicionamento en buscadores y buen desarrollo web, no son la razón por la que todo el mundo habla de HTML5. Video, audio y animación vectorial están en la lista de prioridades y en la boca de todas las personas que evangelizan su uso.<br/>
-                    Especificamente, las nuevas etiquetas son:</p>
-                    <p><strong>&lt;video&gt;</strong> Inserta video sin necesidad de plugins.</p>
-                    <p><strong>&lt;audio&gt;</strong> Lo mismo que video, pero sin video.</p>
-                    <p><strong>&lt;input*&gt;</strong> Input ya existía como la etiqueta para insertar cajas de texto y botones. Ahora es más poderosa.</p>
-                    <p><strong>&lt;canvas&gt;</strong> Un área de dibujo vectorial y de bitmaps con Javascript.</p>
-                    <p><strong>&lt;svg&gt;</strong> Una etiqueta, igual que&lt;img&gt;, para insertar dibujos y animaciones vectoriales al estilo de Flash.</p>
-            </div>
-        <p class="atencion"> Las veremos mas detalladamente en un rato</p>
-        <h2>Compatibilidad con navegadores</h2>
-        <p>HTML5 trae al mundo del desarrollo web habilidades que, siendo el 2010, era casi vergonzoso no tener. Cosas como &lt;video&gt;,&lt;canvas&gt; eran más que necesarias. sin embargo, no es el primer gran cambio de internt.<br/>
-        La primera gran evolución del desarrollo web vino en el 2004 con Gmail, al traer a la luz el objeto XmlHttpRequest, más conocido como AJAX.</p>
-        <p>Lo que pocos saben es que AJAX fue creado por Microsoft para Internet Explorer 5 en 1999. Sí, el navegador responsable de detener la innovación más importante sin la cual, cosas como gmail, Facebook, Google Maps o quizás Twitter, habrían sido inviables.</p>     
-        <p>Internet Explorer, claro, es también la rázon de la poca adopción de HTML5. sin embargo, hay formas de que las etiquetas semánticas de HTML5 y atributos de CSS3 funcione en IE.</p>
-        <h2>Compatibilidad HTML5 en el Explorer</h2>
-        <p>HTML5 Enabling Script: Permite usar las etiquetas semanticas dentro de IE6, 7 y 8 como si fueran divs normales, estilizables por CSS. Sin este script, las etiquetas son ignoradas en IE y es imposible agregarles diseños a ellas o cualquier elemento dentro de ellas.</p>  
-        <p>Para utilizarlo debes incluir esta línea en el HEAD de tu documento.</p>
-        <div class="azul"> 
-          <p>&lt;!--[if It IE 9]&gt;</p>
-          <p >&lt;script src="http://HTML5shim.googlecode.com/svn/trunk/HTML5.js"&gt;</p>
-          <p ></p>&lt;/script&gt;</p>
-          <p>&lt;![endif]-->&gt;</p></div>
+<head>
+  <meta charset="UTF-8">
+    <title> HTML5 y CSS3</title>
+    <link rel="stylesheet" href="Estilohtml5.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+ <body>
+<header id="main-header">
+      <a id="logo-header" href="Proyectoinicial/logo1.jpg">
+      <span class="site-name">Fernando Paiva</span><br/>
+      <span class="site-desc">WebDeveloperMan</span></a>
+<nav>
+  <ul class="button">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Acerca de mí</a></li>
+    <li><a href="#">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<div class="container">
+<h1 class="azul1">HTML5 y CSS3</h1>
+  <p><strong>INTRODUCCIÓN</strong></p>
+  <P>HTML5 es la actualización de HTML, el lenguaje en el que es creada la web. HTML5 también es un termino de marketing para agrupar las nuevas tecnologías de desarrollo de aplicaciones web: HTML5, CSS3 y nuevas capacidades de Javascript.</P>
+  <P>La versión anterior y más usada de HTML, HTML4, carece de características necesarias para la creación de aplicaciones modernas basadas en un navegador. </P>
+  <p>Flash en especial ha sido usado en reemplazo de HTML para desarrollar web apps que superan las habilidades de un navegador: Audio, video, webcams, micrófonos, datos binarios, animaciones vectoriales, componentes de interfaz complejos, entre muchas otras cosas. Ahora HTML5 es capaz de hacer esto sin necesidad de plugins y con una gran compatibilidad entre navegadores.</p>
+<h2 class="azul1">ESTRUCTURA DEL DOCUMENTO</h2>
+<div class="tablecontainer">
+  <table id="mainTable">
+    <tr>
+      <td colspan=3>&lt;Header&gt;</td>
+    </tr>
+    <tr>
+      <td rowspan=1>&lt;nav&gt;</td>
+      <td rowspan=1>&lt;Section&gt;
+  <table>
+    <tr> 
+      <td>&lt;header&gt;</td>
+    </tr>
+    <tr><td>&lt;article&gt;</td></tr>
+    <tr><td>&lt;footer&gt;</td></tr>
+  </table>
+      </td>
+      <td rowspan=1>&lt;aside&gt;</td>
+    </tr>
+      <td colspan=3>&lt;footer&gt;</td>
+    </tr>
+  </table>
+</div>
+<P>En HTML 5 usaremos como referencia una nueva estructura de elementos que cambiarán la manera de elaborar el contenido (sobre todo de blogs) y la manera en que buscadores lo analizan.</P>
+<h2 class="azul1">Nuevas etiquetas</h2>
+<p><strong>&lt;header&gt;</strong> está diseñada para reemplazar las necesidad de crear divs sin significado semántico.</p>
+<p><strong>&lt;hgroup&gt;</strong> permite colocar un h1, h2, h3 dentro del header sin afectar el SEO, permitiendo usar otro h1 en el sitio.<br/>
+En el HTML actual, sólo puedes usar h1 una sola vez por sitio o el h1 pierde prioridad de SEO.</p>
+<p><strong>&lt;nav&gt;</strong> Igual que&lt;header&gt;,&lt;nav&gt; está diseñado para que ahí coloques la botonera de navegación principal. Puedes colocar cualquier etiqueta dentro, aunque lo recomendado es usar listas &lt;ul&gt;</p>
+<p><strong>&lt;section&gt;</strong> Define un área de contenido única dentro del sitio. En un blog, sería la zona donde están todos los posts. En un video de youtube, habría un section para el video, uno para los datos del video, otro para la zona de comentarios.</p>
+<h2>Nuevas etiquetas II</h2>
+<p><strong>&lt;article&gt;</strong> Define zonas únicas de contenido independiente. En el home de un blog, cada post sería un article..</p>
+<p><strong>&lt;aside&gt;</strong> Cualquier contenido que no esté relacionado con el objetivo primario de la página va en un aside. En un blog, obviamente el aside es la barra lateral de información.<br/>
+En el home de un periódico, puede ser el área de indicadores económicos, bibliografía, fuentes...</p>
+<p><strong>&lt;footer&gt;</strong> Este es obvio. Es el pie de página y todo lo que lo compone.</p>
+<p class="atencion"> Atención el&lt;div&gt;no está muerto:</p>
+<p>Estas nuevas etiquetas no significan que ya no se use &lt;div&gt;. Div siempre debe usarse cuando necesites una caja con objetivos de diseño grafico o cualquier cosa que no tenga significado semántico. Sólo usa etiquetas semánticas de HTML5 donde sean necesarias. </p>
+<h2 class="azul1">Ejemplo de BODY en una página HTML 5</h2>
+<div class="estructura">
+    <p class="red"><strong>&lt;header&gt;</strong><br/>
+    <p class="indent1 red"><strong>&lt;hgroup&gt;</strong><br/>
+    <p class="indent3"><strong>&lt;h1&gt;</strong>El blog de mlw.io<strong>&lt;/h1&gt;</strong>
+    <p class="indent3"><strong>&lt;h2&gt;</strong>Este es el blog de Mejorando la web<strong>&lt;/h2&gt;</strong>
+    <p class="indent1 red"><strong>&lt;/hgroup&gt;</strong>
+    <p class="red"><strong>&lt;/header&gt;</strong><br/>
+    <p class="red"><strong>&lt;nav&gt;</strong><br/>
+    <p>Aquí va la botonera de navegación.</p>
+    <p class="red"><strong>&lt;/nav&gt;</strong><br/>
+    <p class="red"><strong>&lt;section&gt;</strong><br/>
+    <p class="indent1 red"><strong>&lt;hgroup&gt;</strong><br/>
+    <p class="indent3"><strong>&lt;article&gt;</strong>Aquí va un post, con su titulo en h2<strong>&lt;/article&gt;</strong><br/>
+    <p class="indent3"><strong>&lt;article&gt;</strong>Aquí va un post, con su titulo en h2<strong>&lt;/article&gt;</strong><br/>
+    <p class="indent3"><strong>&lt;article&gt;</strong>Aquí va un post, con su titulo en h2<strong>&lt;/article&gt;</strong><br/>
+    <p class="indent1 red"><strong>&lt;/hgroup&gt;</strong><br/>
+    <p class="red"><strong>&lt;/section&gt;</strong><br/>
+    <p class="red"><strong>&lt;aside&gt;</strong><br/>
+    <p>Barra lateral, como cuentas de twitter, facebook, post viejos, etc.</p>
+    <p class="red"><strong>&lt;/aside&gt;</strong><br/>
+    <p class="red"><strong>&lt;footer&gt;</strong><br/>
+    <p>Pie de pagina, amenazas de copyright, etc.</p>
+    <p class="red"><strong>&lt;/footer&gt;</strong><br/>
+<h2 class="azul1">Nuevas etiquetas III</h2>
+    <p>Las etiquetas semánticas, a pesar de ser claves para posicionamento en buscadores y buen desarrollo web, no son la razón por la que todo el mundo habla de HTML5. Video, audio y animación vectorial están en la lista de prioridades y en la boca de todas las personas que evangelizan su uso.<br/>
+    Especificamente, las nuevas etiquetas son:</p>
+    <p><strong>&lt;video&gt;</strong> Inserta video sin necesidad de plugins.</p>
+    <p><strong>&lt;audio&gt;</strong> Lo mismo que video, pero sin video.</p>
+    <p><strong>&lt;input*&gt;</strong> Input ya existía como la etiqueta para insertar cajas de texto y botones. Ahora es más poderosa.</p>
+    <p><strong>&lt;canvas&gt;</strong> Un área de dibujo vectorial y de bitmaps con Javascript.</p>
+    <p><strong>&lt;svg&gt;</strong> Una etiqueta, igual que&lt;img&gt;, para insertar dibujos y animaciones vectoriales al estilo de Flash.</p>
+</div>
+<p class="atencion"> Las veremos mas detalladamente en un rato</p>
+<h2 class="azul1">Compatibilidad con navegadores</h2>
+<p>HTML5 trae al mundo del desarrollo web habilidades que, siendo el 2010, era casi vergonzoso no tener. Cosas como &lt;video&gt;,&lt;canvas&gt; eran más que necesarias. sin embargo, no es el primer gran cambio de internt.<br/>
+La primera gran evolución del desarrollo web vino en el 2004 con Gmail, al traer a la luz el objeto XmlHttpRequest, más conocido como AJAX.</p>
+<p>Lo que pocos saben es que AJAX fue creado por Microsoft para Internet Explorer 5 en 1999. Sí, el navegador responsable de detener la innovación más importante sin la cual, cosas como gmail, Facebook, Google Maps o quizás Twitter, habrían sido inviables.</p>     
+<p>Internet Explorer, claro, es también la rázon de la poca adopción de HTML5. sin embargo, hay formas de que las etiquetas semánticas de HTML5 y atributos de CSS3 funcione en IE.</p>
+<h2 class="azul1">Compatibilidad HTML5 en el Explorer</h2>
+<p>HTML5 Enabling Script: Permite usar las etiquetas semanticas dentro de IE6, 7 y 8 como si fueran divs normales, estilizables por CSS. Sin este script, las etiquetas son ignoradas en IE y es imposible agregarles diseños a ellas o cualquier elemento dentro de ellas.</p>  
+<p>Para utilizarlo debes incluir esta línea en el HEAD de tu documento.</p>
+<div class="azul"> 
+    <p>&lt;!--[if It IE 9]&gt;</p>
+    <p >&lt;script src="http://HTML5shim.googlecode.com/svn/trunk/HTML5.js"&gt;</p>
+    <p ></p>&lt;/script&gt;</p>
+    <p>&lt;![endif]-->&gt;</p>
+</div>
+<h3>httpp://remysharp.com/2009/01/07/html5-enabling-script/</h3>
+<h2 class="azul1">Compatibilidad con CSS3</h2>
+<p>Para muchos navegadores es necesario usar prefijos ( cada vez menos pues se actualizan muy rapido), en versiones mas recientes de Firefox, Chrome u Opera.</p>
+<P>Además muchas alternativas que están basadas en estos sistemas.</P>
+<p>Los prefijos que podemos usar son:</p>
+<p>-moz- Para Firefox, -webkit- Para Chrome, y -o- Para Opera</p>
+<p class="indent1 red">Ejemplo:<br/>
+  -webkit-border-radius:12px;<br/>
+   -moz-border-radius:12px;<br/>
+    border-radius:12px;<br/>
+</p>
+<h2 class="azul1">¿Y como se que navegadores son compatibles?</h2>
+<p>El mejor sitio que puede responderte eso en <a class="negronegrita" href="https://caniuse.com/">CanIUse.com.</a> Donde encontarás una lista de todas las capacidades de <strong>HTML5, CSS3 y el nuevo Javascript</strong>, junto a una tabla de compatibilidad. Sin embargo, no te asustes demasiado si ves muchos cuadros rojos. Recuerda los scripts que mencioné arriba como <strong>HTML5 Enabling Script.</strong> Gracias a ellos, muchos de esos rojos se convierten en verdes. </p>
+<div class="central">
+    <img src="Proyectoinicial/canIuse.jpg" alt="Caniuse">
+</div>
+<h2 class="azul1">Un mundo de etiquetas nuevas</h2>
+<p>Ya hemos visto algunas etiquetas nuevas en html pero trae otras nuevas etiquetas que podemos usar y no todas son para definir la semántica de la página, ahora comentaremos mas detalladamente algunas de estas nuevas etiquetas.</p>
+<div class="central">
+    <img src="Proyectoinicial/etiquetas.jpg" alt="etiquetas">
+</div>
+<h2 class="azul1">El HTML 5 &lt;!DOCTYPE&gt;</h2> 
+<h3 class="negronegrita">La nueva forma del doctype en html, simple verdad</h3>
+<h3 class="red">Ejemplo de estructura minima de un documento html 5</h3>
+<div class="negronegrita"><p>&lt;!DOCTYPE&gt;</p>
+    <p>&lt;html&gt;</p>
+    <p class="indent1">&lt;head&gt;</p>
+    <p class="indent1">&lt;title&gt; El título del documento&lt;/title&gt;</p>
+    <p class="indent1">&lt;/head&gt;</p>
+    <p class="indent1">&lt;body&gt;</p>
+    <p class="indent1">El contenido del documento</p>
+    <p class="indent1">&lt;/body&gt;</p>
+    <p>&lt;/html&gt;</p>
+</div>
+<h2 class="azul1">&lt;wbr&gt;</h2>
+<p class="negronegrita">Para cortar las palabras por el lugar adecuado.</p>
+<p>&lt;p&gt;</p>
+<p>Para aprender AJAX, debes estar familiarizado con el XML&lt;wbr&gt;Http&lt;wbr&gt;Request Object.</p>
+<p>&lt;/p&gt;</p>
+<p>Para aprender AJAX, debes estar familiarizado con el XML<wbr>Http<wbr>Request	Object.</p>
+<h2 class="azul1">&lt;time&gt;</h2>
+<p>Este elemento puede ser tulizadocomo una forma de codificar las fechas y horas en una forma legible por máquina, de manera que, por ejemplo, los agentes de usuario pueden ofrecer para añadir recordatorios de cumpleaños o eventos programados en el calendario de usuario, y los motores de búsqueda puede producir resultados más inteligentes de búesqueda.</p>
+<h3 class="azul2">&lt;p&gt; We open at &lt;time&gt;10:00&lt;/time&gt; every morning.&lt;/p&gt;</h3>
+<h3 class="azul2">&lt;p&gt; I have an event &lt;time datetime="2020/11/05"&gt;Cumpleaños&lt;/time&gt;&lt;/p&gt;</h3>
+<h2 class="azul1">Microdatos</h2>
+<p>Pero¿qué son los microdatos? Pues básicamente son pequeñas mejoras del HTML que, en aparencia no han de modificar nada, pero que hacen que las máquinas (buscadores, navegadores, aplicaciones...) sean capaces de interpretar y mejorar semánticamente el significado de parte de la información que se muestra por pantalla.</p>
+<p>Ejemplo de uso:</p>
+<div class="azul2">
+    <p>lt;div itemscope itemtype="http://data-vocabulary.org/Person"&gt;</p>&
+    <p>Me llamo &lt;span itemprop="name"&gt; Antonio&lt;/span&gt; </p>
+    <p>Me llamo &lt;span itemprop="nickname"&gt; Ciberkaos&lt;/span&gt; </p>
+    <p>Trabajo de &lt;span itemprop="title"&gt; Formador y diseñador&lt;/span&gt; </p>
+    <p>La webdel curso es &lt;span itemprop="url"&gt; http://ciberkaos.synology.me:8080/cursohermandades&lt;/span&gt; </p>
+    <p>Mi amigo &lt;span itemprop="friend"&gt; Juan&lt;/span&gt; </p>
+    <p>&lt;/div&gt;</p>
+</div>
+<h2 class="azul1">Manifesto I</h2>
+<p>Una de las tendencias que están surgiendo actualmente es que Internet ya no le pertenece a las páginas web, sino que este lugar lo han venido tomando progresivamene las aplicaciones web. Una de las limitaciones de la dependencia de aplicaiones en Internet es que necesitamos estar conectados constantemente a una red para tener acceso a la misma. Por suerte HTML5 está dando los primeros pasos para que esta limitación desaparezca: El acceso a las aplicaciones web haciendo uso del Cache.</p>
+<h3 class="naranja">Para usar esta opción seguiremos los siguientes pasos</h3>
+<h3 class="red"> Paso1: Crear un archivo col la extension .appcache donde introduciremos los archivos que queremos que tengan acceso de forma off-line</h3>
+<P>Ejemplo: NombreArchivo.appcache</P>
+<h2 class="azul1">Manifesto II</h2>
+<h3 class="red"> Paso2: Introduciremos en ese documento (formato txt), la lista de archivos y sus rutas correspondientes.</h3>
+<p>CACHE MANIFEST</p>
+<p># versión 0.1</p>
+<p>index.html</p>
+<p>web.png</p>
+<p>Estilos/estilo.css</p>
+<p>img/foto1.jpg</p>
+<p>....</p>
+<h3 class="red"> Paso3: Por último debemos dediarle al documento html, que queramos Activar esta opción, eso lo haremos como en el seguiente ejemplo:</h3>
+<p>&lt;html manifest="nombreArchivo.appcache"&gt;</p>
+<h2 class="azul1">Contenido editable</h2>
+<p>Ahora en html5, cualquier contenido puede ser editable, sin usar formularios (textarea o input) con la propriedad contenteditable="true", e incluso, se pueden agregar listas ordenadas (&lt;ol&gt;) o desordenadas (&lt;ul&gt;).</p>
+<p>Un ejemplo:</p>
+<p>&lt;section contenteditable="true"&gt;</p>
+<p class="indent1">&lt;h2&gt;Titulo&lt;h2&gt;</p>
+<p claclass="indent1ss="indent1">&lt;p&gt;Texto&lt;/p&gt;</p>
+<p class="indent1">&lt;ul&gt;</p>
+<p class="indent3">&lt;li&gt;Elemento&lt;/li&gt;</p>
+<p class="indent3">&lt;li&gt;Elemento&lt;/li&gt;</p>
+<p class="indent3">&lt;li&gt;Elemento&lt;/li&gt;</p>
+<p class="indent1">&lt;/ul&gt;</p>
+<p>&lt;/section&gt;</p>
+<h3 class="azul">Syntaxis: &lt;element contenteditable="true|false"&gt;</h3>
+<h2 class="azul1">VIDEO</h2>
+<p>Hasta ahora, no ha habido un estándar para la proyección de un video/película en una página web.</p>
+<p>Hoy en día, la mayoría de los vídeos se muestran a través de un plug-in (como Flash). Sin embargo, los navegadores diferentes pueden tener diferentes plug-ins.</p>
+<p>HTML 5 define un nuevo elemento que especifica un metódo estándar para incrustar un vídeo / película en una página web: el elemento &lt;video&gt;.</p>
+<div class="azul2">
+   <p>&lt;video width="320" height="240" controls="controls"&gt;</p>
+   <p class="indent3">&lt;source src"movie.mp4" type="video/mp4"/&gt;</p>
+   <p class="indent3">&lt;source src"movie.ogg" type="video/ogg"/&gt;</p>
+   <p>Tu navegador no es compatible para ver este video.</p>
+   <p>&lt;/video&gt;</p>
+</div>
+<h3>Ejemplo:</h3>
+<div class="movie">
+    <video width="320" height="240" controls>
+      <source src="Proyectoinicial/Typing.mp4" type="video/mp4">
+    </video>
+</div>
+<h2 class="azul1">AUDIO</h2>
+<p>Al igual que los vides hasta ahora el audio se usaba a través de un plug-in (como Flash).</p>
+<p>HTML5 define un nuevo elemento que especifica un método estándar para incrustar un archivo de audio en una página web: el elemento &lt;audio&gt;.</p>
+<div class="azul2">
+    <p>&lt;audio controls="controls"&gt;</p>
+    <p class="indent3">&lt;source src"song.mp3" type="audio/mpeg"/&gt;</p>
+    <p class="indent3">&lt;source src"song.ogg" type="audio/ogg"/&gt;</p>
+    <p>Tu navegador no puede reproducir este audio.</p>
+    <p>&lt;/audio&gt;</p>
+</div>
+<h2 class="azul1">Nuevos atributos para formularios<br/>(input)</h2>
+<p>HTML 5 viene con un montón de atributos nuevos para los formularios lo que nos ahorrara mucho trabajo para validación de los mismos.</p>
+<p>Como no existe mejor modo de aprender que hacerlo uno mismo, vamos a ir escribiendo en una página de formulario los siguientes ejemplos e iremos comentando cada uno.</p>
+<h2 class="azul1">Search<br/>(input)</h2>
+<h3>&lt;input type="search" autofocus placeholder="search"name="nombre"&gt;</h3>
+<p>En input type estamos declarando el tipo de input, luego con Autofocus significa que al cargar la página, se autoseleccionará este campo.</p>
+<p>El placeholder es el texto que aparecerá en el campo inactivo, de modo que cuando lo seleccionemos pues se quedará en blanco y en name, le asignamos cualquier nombre al campo.</p>
+<input type="search" autofocus placeholder="search"name="nombre"&gt;>
+<h2 class="azul1">Number</h2>
+<h3>&lt;input type="number" min="10" max="80" step="10" placeholder="numero"name="nombre"&gt;</h3>
+<input type="number" min="10" max="80" step="10" placeholder="numero"name="nombre">
+<h3>Como dijimos, input type declara el tipo de input, min declara el número mínimo de caracteres, mas el número máximo, placeholder y name ya lo habíamos dicho.</h3>
+<h2 class="azul1">Range</h2>
+<h3>&lt;input type="range" min="10" max="80" placeholder="range"name="nombre"/&gt;</h3>
+<h2 class="azul1">Date</h2>
+<h3>&lt;input type="datetime"/&gt;</h3>
+<p class="red">Se puede cambiar datetime por date, datetime-local, time, week, o month</p>
+<input type="date"/>
+<h2 class="azul1">Tel, email, url</h2>
+<h3>&lt;input id="input" name="input" type="email/&gt;</h3>
+<p class="red">Se puede cambiar email por url</p>
+<input id="input" name="input" type="email"/>
+<h2 class="azul1">Requerido</h2>
+<p>Ahora los formularios permiten el atributo 'required' para especificar que un campo es requerido. Estp significa que los datos del formulario no serán enviados si el campo marcado como requerido está vacío. Puedes utilizar este atributo de dos formas:</p>
+<h3>&lt;label for="name"&gt; First name*: &lt;/label&gt;</h3>
+<h3>&lt;input type="text" name="input1" required/&gt;</h3>
+<label for="lfname">First name*:</label> 
+<input type="text" name="input1" required/>
+<p>o</p>
+<h3>&lt;label for="name"&gt; First name*: &lt;/label&gt;</h3>
+<h3>&lt;input type="text" name="input1" required="required"/&gt;</h3>        
+<label for="name">First name*:</label> 
+<input type="text" name="input1" required="required"/>
+<h2 class="azul1">Enfoque automático de atributos</h2>
+<h3>&lt;input type="text" name="fname" autofocus="autofocus"/&gt;</h3>
+<input type="text" name="fname" autofocus="autofocus"/>
+<h2 class="azul1">Height y Width</h2>
+<h3>&lt;input type="image" src="img_submit.gif alt="submit" width="48 height="48" /&gt;</h3>
+<p>Nota: La altura y la anchura de los atributos sólo se utilizan con &lt;input type="image"/&gt; </p>
+<div class="central">
+<iframe src="https://giphy.com/embed/gK8DRvyD3BQoU" width="480" height="348" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/mtv-rihanna-riri-badgalriri-gK8DRvyD3BQoU">via GIPHY</a></p>
+</div>
+<h2 class="azul1">Múltiples atributos</h2>
+<h3>&lt;input type="file" name="img" multiple="multiple" /&gt;</h3>
+<input type="file" name="img" multiple="multiple" />
+<h2 class="azul1">Step</h2>
+<p>El atributo especifica los intervalos de paso número legal de un elemento &lt;input type="number" name="points" step="3"/&gt; </p>
+<input type="number" name="points" step="3"/>
+<h2 class="azul1">Datalist</h2>
+<p>Muestra una lista predefinida cuando insertamos un texto.</p>
+<p>&lt;input list="browsers"/&gt;</p>
+<p>&lt;datalist id="browsers"/&gt;</p>
+<p class="indent1">&lt;option value="Internet Explorer"/&gt;</p>
+<p class="indent1">&lt;option value="Firefox"/&gt;</p>
+<p class="indent1">&lt;option value="Chrome"/&gt;</p>
+<p class="indent1">&lt;option value="Opera"/&gt;</p>
+<p class="indent1">&lt;option value="Safari"/&gt;</p>
+<p>&lt;/datalist&gt;</p>
+<div>
+  <input list="browsers"/>
+    <datalist id="browsers"/>
+    <option value="Internet Explorer"/>
+    <option value="Firefox"/>
+    <option value="Chrome"/>
+    <option value="Opera"/>
+    <option value="Safari"/>
+  </datalist>
+</div>
+<h2 class="azul1">Expresiones regulares</h2>
+<p>Si deseas que en un campo de un formulario solo se puedan escribir solo un número máximo de caracterés, o solo mayúsculas, etc., esto lo puedes hacer mediante expresiones regulares utilizadas directamente en el código HTML: </p>
+<p>&lt;input type="text" name="username" id="username" placeholder="4 &lt;&gt; 10" pattern="[A-Za-z]{4,10}" required/&gt;</p>
+<input type="text" name="username" id="username" placeholder="4 <> 10" pattern="[A-Za-z]{4,10}" required/>
+          
 
-
-        <h3>httpp://remysharp.com/2009/01/07/html5-enabling-script/</h3>
-
-        <h2>Compatibilidad con CSS3</h2>
-      <p>Para muchos navegadores es necesario usar prefijos ( cada vez menos pues se actualizan muy rapido), en versiones mas recientes de Firefox, Chrome u Opera.</p>
-      <P>Además muchas alternativas que están basadas en estos sistemas.</P>
-      <p>Los prefijos que podemos usar son:</p>
-
-      <p>-moz- Para Firefox, -webkit- Para Chrome, y -o- Para Opera</p>
-
-      <p class="indent1 red">Ejemplo:<br/>
-        webkit-border-radius:12px;<br/>
-        -moz-border-radius:12px;<br/>
-        border-radius:12px;<br/>
-      </p>
-
-      
-    
-    
     </div>
     <footer id="main-footer">
         <p>&copy; 2020 <a href="">Fernando Paiva</a></p>
@@ -151,4 +303,3 @@
     </body>
     
     </html>
-    

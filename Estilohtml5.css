@@ -1,17 +1,3 @@
-html,
-body {
-  padding: 0;
-  font-size: 14.4px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fbfbfb;
-  margin: 0 0 10px;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 10px;
-}
 table {
   text-align: center;
   font-size: 30px;
@@ -38,76 +24,10 @@ td {
 .estructura {
   font-size: 20px;
 }
-.red {
-  color: red;
-}
-.azul {
-  color: #0505ab;
-  font-size: 20px;
-}
+
 .indent1 {
   text-indent: 1em;
 }
 .indent3 {
   text-indent: 3em;
-}
-#main-header {
-  background: rgb(73, 72, 72);
-  color: white;
-  height: 80px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#main-header a {
-  color: white;
-}
-
-#main-footer {
-  background: rgb(73, 72, 72);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-#main-footer p {
-  margin: 2;
-}
-
-#main-footer a {
-  color: white;
-}
-
-nav {
-  float: right;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-}
-
-nav ul li a {
-  display: block;
-  padding: 0 10px;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  background: #0b76a6;
-}
-#change {
-  display: block;
-  padding: 0 50px;
-  margin: 5;
-  width: 360px;
-
-  text-decoration: none;
-  background: #c6c6ca;
 }

@@ -1,144 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title> HTML a Secas</title>
-        <link rel="stylesheet" href="Estilos.css">
-        </head>
+<head>
+    <meta charset="UTF-8">
+    <title> HTML a Secas</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <link rel="stylesheet" href="main.css">
+</head>
 <body>
     
-<header id="main-header">
-		
-		<a id="logo-header" href="Proyectoinicial/logo1.jpg">
-			<span class="site-name">Fernando Paiva</span><br/>
-			<span class="site-desc">WebDeveloperMan</span>
-		</a> <!-- / #logo-header -->
+<header id="main-header">		
+    <a id="#" href="#">
+	<span class="site-name">Fernando Paiva</span><br/>
+	<span class="site-desc">WebDeveloperMan</span></a>
+<nav>
+	<ul class="button">
+	    <li> <a href="html5.html">HTML5 y CSS3</a></li>
+		<li><a href="#">Acerca de mí</a></li>
+		<li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+</header>
 
-		<nav>
-			<ul>
-				<li> <a href="html5.html">HTML5 y CSS3</a></li>
-				<li><a href="#">Acerca de mí</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav><!-- / nav -->
-
-    </header><!-- / #main-header -->
-    <div class="container">
-<h2>HTML a Secas</h2>
-<p>En todo documento HTML se distinguen en dos tipos de elementos</p>
-<p>Etiquetas: Indican como se ha de organizar el contenido del documento</p>
+<div class="container">
+    <h1 class="azul1">HTML a Secas</h1>
+        <p>En todo documento HTML se distinguen en dos tipos de elementos</p>
+        p>Etiquetas: Indican como se ha de organizar el contenido del documento</p>
 <ul>
     <li> Están delimitadas por los caracteres "(&lt; y &gt;)" y pueden tener una gemela de cierre delimitando as su area de influencia.</li>
     <li> Estas etiquetas pueden tener atributos, aunque la tendencia en HTML5 es eliminar el uso de estos atributos utlizando las hojas de estilo CSS.</li>
 </ul>
 <p>Contenido:Es información contenida en el documento</p>
 Ejemplo:
-<p>
-    &lt;p class="normal"&gt;Esto es un párrafo&lt;/p&gt;
-</p>
-<p class ="importante">Ejemplo de una página web:</p>
+    <p> &lt;p class="normal"&gt;Esto es un párrafo&lt;/p&gt;</p>
+    <p class ="importante">Ejemplo de una página web:</p>
 <div class="central">
     <img src="Proyectoinicial/Ejemplopagina.jpg" alt="Ejemplo">
 </div>
 
-<h2>Estructura de un documento HTML</h2>
+<h2 class="azul1">Estructura de un documento HTML</h2>
 <section>
     <p>&lt;HTML&gt;</p>
     <p>&lt;HEAD&gt;</p>
-      <p>&lt;TITLE&gt; Título de la página &lt;/TITLE&gt;</p>
-      <p>&lt;/HEAD&gt;</p>
+    <p>&lt;TITLE&gt; Título de la página &lt;/TITLE&gt;</p>
+    <p>&lt;/HEAD&gt;</p>
     <p>&lt;BODY&gt;</p>
-        <p>Contenido de la página</p>
+    <p>Contenido de la página</p>
     <p>&lt;/BODY&gt;</p>
     <p>&lt;/HTML&gt;</p>
-
 </section>
+
 <section>
     <p>La etiqueta &lt;HTML&gt; ... &lt;/HTML&gt; indica el comienzo y el final del documento HTML</p>
-        <p>Un documento HTML básico tiene una cabecera y un cuerpo.</p>
+    <p>Un documento HTML básico tiene una cabecera y un cuerpo.</p>
     <p><b>Cabecera:</b> &lt;HEAD&gt; ... &lt;/HEAD&gt;</p>
     <p><b>Cuerpo:</b> &lt;BODY&gt; ... &lt;/BODY&gt;</p>
-
     <div class="central"><img src="Proyectoinicial/HTML.Eje.jpg" alt="html"></div>
-    
     <p><b>&lt;HTML&gt;:</b> indica el comienzo y el final de un docum/ento HTML. Todo lo que se coloque fuera de la etiqueta &lt;html&gt; se ignora, salvo alguna excepción.</p>
     <p><b>&lt;HEAD&gt;:</b> es la cabecera del documento. La cabecera contiene información sobre el propio documento HTML, el título y el idioma de la página. Los contenido indicados en la cabecera no son visibles para el usuario, con la excepción de la etiqueta &lt;title&gt;.</p>
     <p><b>&lt;/BODY&gt;:</b> es el cuerpo del documento HTML. El cuerpo encierra todos los contenidos que muestran al usuario(párrafos de texto, imágenes, tablas).</p>
 </section>
-<h2>EL TEXTO</h2>
-<section>
+<h2 class="azul1">EL TEXTO</h2>
+
 <section>
    <p><b>La etiqueta &lt;p&gt; se utiliza para representar un párrafo.</b></p> 
     <p>&lt;p&gt;</p>
     <p>Esto es un texto de párrafo.</p>
     <p>&lt;/p&gt;</p>
-
     <p>Etiquetas de linea para el texto:</p>
-    <h2><b>ETIQUETAS DE ESTILO FÍSICO</b></h2>
+    <h2 class="azul1"><b>ETIQUETAS DE ESTILO FÍSICO</b></h2>
     <p>Especifican un cambio concreto en el tipo de letra</p>
-    <ul>
-        <li> <b>Texto en negrita: </b> &lt;B&gt;...&lt;/B&gt; </li>
-        <li><b>Texto en cursiva: </b> &lt;I&gt;... &lt;/I&gt; </li>
-        <li><b>Texto subrayado: </b> &lt;U&gt;... &lt;/U&gt; </li>
-        <li><b>Texto monoespaciado: </b> &lt;TT&gt;... &lt;/TT&gt; </li>
-        <li><b>Texto tachado: </b> &lt;STRIKE&gt;... &lt;/STRIKE&gt; </li>
-        <li><b>Aumentar el tamaño del texto: </b> &lt;BIG&gt;... &lt;/BIG&gt; </li>
-        <li><b>Disminuir el tamaño del texto: </b> &lt;SMALL&gt;... &lt;/SMALL&gt; </li>
-        <li><b>Texto en sub índice: </b> &lt;SUB&gt;... &lt;/SUB&gt; </li>
-        <li><b>Texto en super índice: </b> &lt;SUP&gt;... &lt;/SUP&gt; </li>
-
-    </ul>
-    <p>Desaprobadas</p>
+<ul>
+    <li> <b>Texto en negrita: </b> &lt;B&gt;...&lt;/B&gt; </li>
+    <li><b>Texto en cursiva: </b> &lt;I&gt;... &lt;/I&gt; </li>
+    <li><b>Texto subrayado: </b> &lt;U&gt;... &lt;/U&gt; </li>
+    <li><b>Texto monoespaciado: </b> &lt;TT&gt;... &lt;/TT&gt; </li>
+    <li><b>Texto tachado: </b> &lt;STRIKE&gt;... &lt;/STRIKE&gt; </li>
+    <li><b>Aumentar el tamaño del texto: </b> &lt;BIG&gt;... &lt;/BIG&gt; </li>
+    <li><b>Disminuir el tamaño del texto: </b> &lt;SMALL&gt;... &lt;/SMALL&gt; </li>
+    <li><b>Texto en sub índice: </b> &lt;SUB&gt;... &lt;/SUB&gt; </li>
+    <li><b>Texto en super índice: </b> &lt;SUP&gt;... &lt;/SUP&gt; </li>
+</ul>
+<p>Desaprobadas</p>
 </section>
 <section>
-<h2><b>ETIQUETAS DE ESTILO LOGICO</b></h2>
-    Caracterizan un trozo de texto destacándolo en el contexto
-    <ul>
-        <li> <b>Texto destacado: </b> &lt;EM&gt;...&lt;/EM&gt; </li>
-        <li><b>Texto importante: </b> &lt;STRONG&gt;... &lt;/STRONG&gt; </li>
-        <li><b>Citas y referencias: </b> &lt;CITE&gt;... &lt;/CITE&gt; </li>
-        <li><b>información sobre el autor: </b> &lt;ADDRESS&gt;... &lt;/ADDRESS&gt; </li>
-        <li><b>Definición de un término: </b> &lt;DFN&gt;... &lt;/DFN&gt; </li>
-        <li><b>Fragmento de código de programa: </b> &lt;CODE&gt;... &lt;/CODE&gt; </li>
-        <li><b>Ejemplo de programa: </b> &lt;SAMP&gt;... &lt;/SAMP&gt; </li>
-        <li><b>Variables, argumentos de un programa: </b> &lt;VAR&gt;... &lt;/VAR&gt; </li>
-        
-
-        
-    </ul>
-
-
+<h2 class="azul1"><b>ETIQUETAS DE ESTILO LOGICO</b></h2>
+    <p>Caracterizan un trozo de texto destacándolo en el contexto</p>
+<ul>
+    <li></li> <b>Texto destacado: </b> &lt;EM&gt;...&lt;/EM&gt; </li>
+    <li><b>Texto importante: </b> &lt;STRONG&gt;... &lt;/STRONG&gt; </li>
+    <li><b>Citas y referencias: </b> &lt;CITE&gt;... &lt;/CITE&gt; </li>
+    <li><b>información sobre el autor: </b> &lt;ADDRESS&gt;... &lt;/ADDRESS&gt; </li>
+    <li><b>Definición de un término: </b> &lt;DFN&gt;... &lt;/DFN&gt; </li>
+    <li><b>Fragmento de código de programa: </b> &lt;CODE&gt;... &lt;/CODE&gt; </li>
+    <li><b>Ejemplo de programa: </b> &lt;SAMP&gt;... &lt;/SAMP&gt; </li>
+    <li><b>Variables, argumentos de un programa: </b> &lt;VAR&gt;... &lt;/VAR&gt; </li>     
+</ul>
 </section>
 <section>
-<h2>&lt;h1&gt;..&lt;/h1&gt;</h2>
-<p>La etiqueta h1 se utiliza como encabezado de una sección.</p>
-<p>HTML cuenta con seis diferentes niveles de encabezados, h1 el más importante y el h6 el menos.</p>
-
-<p>&lt;h1&gt;Esto es un texto de título.&lt;/h1&gt;</p>
+<h2 class="azul1">&lt;h1&gt;..&lt;/h1&gt;</h2>
+    <p>La etiqueta h1 se utiliza como encabezado de una sección.</p>
+    <p>HTML cuenta con seis diferentes niveles de encabezados, h1 el más importante y el h6 el menos.</p>
+    <p>&lt;h1&gt;Esto es un texto de título.&lt;/h1&gt;</p>
 <div class="central"><img src="Proyectoinicial/titularnivel.jpg" alt="titular"></div>
-
-    
 </section>
-<section>
-    <h2>LISTAS</h2>
+<h2 class="azul1">LISTAS</h2>
     <p>La etiqueta &lt;ul&gt; se utiliza para crear una lista desordenada. </p>
-
-    <section>
-        <p>&lt;ul&gt;</p>
-            <p>&lt;li&gt;HTML&lt;/li&gt;</p>
-            <p>&lt;li&gt;CSS&lt;/li&gt;</p>
-            <p>&lt;li&gt;JavaScript&lt;/li&gt;</p>
-        <p>&lt;/ul&gt;</p>
-    </section>
-    <section>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
+<section>
+    <p>&lt;ul&gt;</p>
+    <p>&lt;li&gt;HTML&lt;/li&gt;</p>
+    <p>&lt;li&gt;CSS&lt;/li&gt;</p>
+    <p>&lt;li&gt;JavaScript&lt;/li&gt;</p>
+    <p>&lt;/ul&gt;</p>
+</section>
+ <section>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</section>
     <P>Listas no enumeradas: &lt;UL&gt; ... &lt;/UL&gt; </P>
-    <h3>Atributos de esta etiqueta</h3>
+    <h2 class="azul1">Atributos de esta etiqueta</h2>
     <p>El elemento termina</p>
     <p>al encontrar la etiqueta final&lt;/LI&gt; (no es obligatoria)</p>
     <p>al encontrar otra etiqueta inicial &lt;LI&gt;</p>
@@ -146,188 +128,160 @@ Ejemplo:
 </section>
 <section>
     <p>La etiqueta &lt;ol&gt; se utiliza para crear una lista desordenada. </p>
-
-    <section>
-        <p>&lt;ol&gt;</p>
-            <p>&lt;li&gt;HTML&lt;/li&gt;</p>
-            <p>&lt;li&gt;CSS&lt;/li&gt;</p>
-            <p>&lt;li&gt;JavaScript&lt;/li&gt;</p>
-        &lt;/ol&gt;
-    </section>
-
-    <section>
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ol>
-    </section>
-
+<section>
+    <p>&lt;ol&gt;</p>
+    <p>&lt;li&gt;HTML&lt;/li&gt;</p>
+    <p>&lt;li&gt;CSS&lt;/li&gt;</p>
+    <p>&lt;li&gt;JavaScript&lt;/li&gt;</p>
+    <p>&lt;/ol&gt;</p>
 </section>
-<P>Listas enumeradas: &lt;OL&gt; ... &lt;/OL&gt; </P>
-<h3>Atributos de esta etiqueta</h3>
-<p>Tipo de enumeración: type=&quot;1&quot;|&quot;A&quot;|&quot;a&quot;|&quot;I&quot;|&quot;i&quot;</p>
-<p>Valor inicial: start=&quot;numero&quot;</p>
+<section>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+</ol>
 </section>
 
+</section>
+    <P>Listas enumeradas: &lt;OL&gt; ... &lt;/OL&gt; </P>
+<h2 class="azul1">Atributos de esta etiqueta</h2>
+    <p>Tipo de enumeración: type=&quot;1&quot;|&quot;A&quot;|&quot;a&quot;|&quot;I&quot;|&quot;i&quot;</p>
+    <p>Valor inicial: start=&quot;numero&quot;</p>
+</section>
     <p>La etiqueta &lt;dd&gt; se utiliza para crear una lista desordenada. </p>
-
-    <section>
-        <p>&lt;dl&gt;</p>
-            <p>&lt;dt&gt;Chocolate&lt;/dt&gt;</p>
-                <p>&lt;dd&gt;Elaborado a base de cacao&lt;/dd&gt;</p>
-            <p>&lt;dt&gt;Caramelo&lt;/dt&gt;</p>
-                <p>&lt;dd&gt;Elaborado a base de azucar&lt;/dd&gt;</p>
-        <p>&lt;/dl&gt;</p>
-    </section>
-
-    <section>
-        <dl>
-                <dt>Chocolate<dt>
-            <dd>Elaborado a base de cacao<dd>
-                    <dt>Caramelo<dt>
-                <dd>Elaborado a base de azucar<dd>
-        </dl>
-    </section>
+<section>
+    <p>&lt;dl&gt;</p>
+    <p>&lt;dt&gt;Chocolate&lt;/dt&gt;</p>
+     <p>&lt;dd&gt;Elaborado a base de cacao&lt;/dd&gt;</p>
+    <p>&lt;dt&gt;Caramelo&lt;/dt&gt;</p>
+    <p>&lt;dd&gt;Elaborado a base de azucar&lt;/dd&gt;</p>
+    <p>&lt;/dl&gt;</p>
+</section>
+<section>
+    <dl>
+        <dt>Chocolate<dt>
+        <dd>Elaborado a base de cacao<dd>
+        <dt>Caramelo<dt>
+        <dd>Elaborado a base de azucar<dd>
+</dl>
+</section>
     <p>Lista de descripciones: &lt;DL&gt; ... &lt;DL&gt;</p>
     <p>Cada elemento de la lista está formado por dos partes</p>
-    <ul>
-        <li>El término que queremos describir: &lt;DT&gt;</li>
-        <li>La descripción de dicho término: &lt;DD&gt;</li>
-    </ul>
-<p><b>Ambos elementos terminan</b></p>
+<ul>
+    <li>El término que queremos describir: &lt;DT&gt;</li>
+    <li>La descripción de dicho término: &lt;DD&gt;</li>
+</ul>
+    <p><b>Ambos elementos terminan</b></p>
 <ul>
     <li>al encontrar la etiqueta final: (&lt;DT&gt; o  &lt;DD&gt;)</li>
     <li>al encontrar otra etiqueta inicial: (&lt;DT&gt; o  &lt;DD&gt;)</li>
     <li>al encontrar la etiqueta final de lista</li>
 </ul>
 <section>
-    <h2>Enlaces</h2>
+<h2 class="azul1">Enlaces</h2>
     <p>&lt;a href=&quot;URI&quot;&gt;Texto&lt;/a&gt;</p>
-    <ul>
-        <li>Enlaces a otras páginas &lt;a href=&quot;URI&quot;&gt;Texto&lt;/a&gt;</li>
-        <li>La dirección de la página enlazada se resulve teniendo en cuenta el valor de la dirección URL del atributo href.</li>
-        <li>El Texto es el elemento activo a través del cual el navegador puede acceder a la página enlazada</li>
-        <li>El color del elmento activo Texto varía en función de si la página ya ha sido visitada por el navegador o no</li>
-        <li>Si se accede a la página enlazada, el navegador se situá al comienzo de la misma</li>
-    </ul>
-    <div class="central"><img src="Proyectoinicial/enlaces.jpg" alt="enlace"></div>
-    
+<ul>
+    <li>Enlaces a otras páginas &lt;a href=&quot;URI&quot;&gt;Texto&lt;/a&gt;</li>
+    <li>La dirección de la página enlazada se resulve teniendo en cuenta el valor de la dirección URL del atributo href.</li>
+    <li>El Texto es el elemento activo a través del cual el navegador puede acceder a la página enlazada</li>
+    <li>El color del elmento activo Texto varía en función de si la página ya ha sido visitada por el navegador o no</li>
+    <li>Si se accede a la página enlazada, el navegador se situá al comienzo de la misma</li>
+</ul>
+<div class="central"><img src="Proyectoinicial/enlaces.jpg" alt="enlace"></div>
 </section>
-
 <section>
-    <h2>Anclas</h2>
-<p>&lt;a name=&quot;nombre&quot;&gt;Texto&lt;/a&gt;</p>
-<p>Las "anclas" so marcas específicas incluidas en el interior de un documento para indicar el comienzo de una sección o bloque de contenido:</p>
-<p><b>&lt;a name=&quot;nombre&quot;&gt;Texto&lt;/a&gt;</b></p>
+<h2 class="azul1">Anclas</h2>
+    <p>&lt;a name=&quot;nombre&quot;&gt;Texto&lt;/a&gt;</p>
+    <p>Las "anclas" so marcas específicas incluidas en el interior de un documento para indicar el comienzo de una sección o bloque de contenido:</p>
+    <p><b>&lt;a name=&quot;nombre&quot;&gt;Texto&lt;/a&gt;</b></p>
 <ul>
     <li>El "nombre" tiene que ser unico para cada marca</li>
     <li>La etiqueta no tiene ningún efecto visible sobre el texto</li>
-
-    </ul>
-    <div class="central"><img src="Proyectoinicial/ancla.jpg" alt="ancla"></div>
-    
-
+</ul>
+<div class="central"><img src="Proyectoinicial/ancla.jpg" alt="ancla"></div>
     <p>&lt;a href=&quot;#nombreAncla&quot;&gt;Texto&lt;/a&gt; &rarr;  &lt;a name=&quot;nombreAncla&quot;&gt;Texto&lt;/a&gt; </p>
 </section>
-
-
-    <section>
-        <p>Enlaces a puntos internos de otro documento</p>
-            <ul>
-                <li>&lt;a href=&quot;URI&quot;&gt;Texto&lt;/a&gt;</li>
-                <li>Donde nombre es un "ancla" en el documento de dirección URI</li>
-                <li>Si se accede a la página enlazada, el navegador se situán en el punto indicado por la marca "nombre"</li>
-                
-                </ul>
-                <div class="central"><img src="Proyectoinicial/ancla2.jpg" alt="ancla2"/> </div>
-                
-
-                <p>&lt;a href=&quot;#nombrePagina#nombreAncla&quot;&gt;Texto&lt;/a&gt; &rarr;  &lt;a name=&quot;nombreAncla&quot;&gt;Texto&lt;/a&gt; </p>
-    </section>
-    <div>
-        <p>Ejemplo:</p>
-        <a href="https://www.w3schools.com/tags/tag_a.asp">Visit W3Schools.com!</a>
-    </div>
-
-    <section>
-        <h2>Imagenes</h2>
-        <p>&lt;IMG src=&quot;URL&quot;/&gt;</p>
-
-        <ul>
-            
-            <li>Inclusión de una imagen:&lt;IMG src=&quot;URL&quot;/&gt; (no tiene etiqueta de cierre)</li>
-            <li>La dirección de la imagen enlazada se resulve teniendo en cuenta el valor de la dirección del atributo "src". Los formatos de imagen usuales son GIF, JPG, o PNG.</li>
-            <p>Atributos de esta etiqueta</p>
-            <ul>
-                <ul>
-                <li>Alternativa para navegadores no gráficos o error en la localización de la imagen: alt="texto".</li>
-                <li>Muy buenos resultados en el posicionamiento junto al atributo tittle="titulo imagen".</li>
-                <li>Borde: border="pixels"</li>
-                <li>Anchura: width="longitud"</li>
-                <li>Altura: height="longitud"</li>
-                </ul>
-                <P>Es muy frecuente utilizar imágens activas que enlazan a otros documentos</P>
-                <p>Esto se consigue combinando las etiquetas  &lt;A...&gt; e &lt;IMG...&gt; de la seguiente forma:</p>
-               
-
-                &lt;a href=&quot;URI&quot;&gt;&lt;IMG src="URI-imagen"/&gt;&lt;A...&gt;
-                <ul>
-                    <li>En este caso se incluye un borde azul de 1 pixel de ancho, para quitar este borde hay que incluir el atributo border="0" en la etiqueta IMG.</li>
-                </ul>
-            </section>
-
-            </ul>
-            
-            <p>Ejemplo: Visite nuestro centro! </p>
-            <a href="https://www.imf-formacion.com/"><img src="Proyectoinicial/IMFLOGO.jpg" /> </a>
-            
 <section>
-    <h2>Tablas</h2>
-        <p>&lt;TABLE&gt; Estructura &gt;&lt;/TABLE&gt;</p>
-    
+    <p>Enlaces a puntos internos de otro documento</p>
 <ul>
-     <li>La Estructura de la tabla está formada por tres tipos de elementos</li>
-     <li>Filas: &gt;&lt;TR&gt;Celdas &gt;&lt;/TR&gt; </li>
-     <li>Celdas de encabezado: &gt;&lt;TH&gt;Texto &gt;&lt;TH&gt;</li>
-     <li>Celdas normales: &gt;&lt;TD&gt;Texto &gt;&lt;TD&gt;</li>
+    <li>&lt;a href=&quot;URI&quot;&gt;Texto&lt;/a&gt;</li>
+    <li>Donde nombre es un "ancla" en el documento de dirección URI</li>
+    <li>Si se accede a la página enlazada, el navegador se situán en el punto indicado por la marca "nombre"</li>
 </ul>
-<p>Atributos de la etiqueta &lt;TABLE&gt; </p>
-<p>Bordes de la celdas: border="pixels"</p>
-<div class="central">
-    <table >
-        <caption><b><p>&lt;TABLE&gt;</p>
-         <p>&lt;TR&gt;</p></b>
-        </caption>
-            <tr> 
-            <td>&lt;TD&gt;&lt;/TD&gt;</td> <td>&lt;TD&gt;&lt;/TD&gt;<p>&lt;TR&gt;</p></td> <td>&lt;TD&gt;&lt;/TD&gt;</td></tr>
-            <tr><td>&lt;TD&gt;&lt;/TD&gt;</td> <td>&lt;TD&gt;&lt;/TD&gt;<p>&lt;TR&gt;</p></td> <td>&lt;TD&gt;&lt;/TD&gt;</td></tr>
-            <tr><th><p></p></th><th><p>&lt;/TR&gt;</p><p>&lt;/TABLE&gt;</p></th><th><p></p></th></tr>
-    </table>
+<div class="central"><img src="Proyectoinicial/ancla2.jpg" alt="ancla2"/> </div>
+    <p>&lt;a href=&quot;#nombrePagina#nombreAncla&quot;&gt;Texto&lt;/a&gt; &rarr;  &lt;a name=&quot;nombreAncla&quot;&gt;Texto&lt;/a&gt; </p>
+</section>
+<div>
+    <p>Ejemplo:</p>
+    <a href="https://www.w3schools.com/tags/tag_a.asp">Visit W3Schools.com!</a>
 </div>
-
-
-<p>Las celdas pueden ocupar más de una fila o columna</p>
-<p><strong>Atributos de las etiquetas &lt;DT&gt;&lt; y &lt;TH&gt;&lt;</strong></p>
-<p>Ocupar más de una columna: colspan="numero"</p>
-<p>Ocupar más de una fila: rowspan="numero"</p>
-
-<p><strong>Observaciones</strong></p>
-<p>Siempre desde la celda en la que se indica el atributo y haca la derecha(para las columnas) o hacia abajo (para las filas)</p>
-<p>Se puede combinar la expansión por filas y por columnas</p>
-<p>Se generan errores si dos expansiones ocupan una misma celda</p>
+<section>
+<h2 class="azul1">Imagenes</h2>
+    <p>&lt;IMG src=&quot;URL&quot;/&gt;</p>
+<ul>
+    <li>Inclusión de una imagen:&lt;IMG src=&quot;URL&quot;/&gt; (no tiene etiqueta de cierre)</li>
+    <li>La dirección de la imagen enlazada se resulve teniendo en cuenta el valor de la dirección del atributo "src". Los formatos de imagen usuales son GIF, JPG, o PNG.</li>
+    <p>Atributos de esta etiqueta</p>
+</ul>
+<ul>
+    <li>Alternativa para navegadores no gráficos o error en la localización de la imagen: alt="texto".</li>
+    <li>Muy buenos resultados en el posicionamiento junto al atributo tittle="titulo imagen".</li>
+    <li>Borde: border="pixels"</li>
+    <li>Anchura: width="longitud"</li>
+    <li>Altura: height="longitud"</li>
+</ul>
+    <P>Es muy frecuente utilizar imágens activas que enlazan a otros documentos</P>
+    <p>Esto se consigue combinando las etiquetas  &lt;A...&gt; e &lt;IMG...&gt; de la seguiente forma:</p>
+    <p>&lt;a href=&quot;URI&quot;&gt;&lt;IMG src="URI-imagen"/&gt;&lt;A...&gt;</p>
+<ul>
+    <li>En este caso se incluye un borde azul de 1 pixel de ancho, para quitar este borde hay que incluir el atributo border="0" en la etiqueta IMG.</li>
+</ul>
+</section>
+    <p>Ejemplo: Visite nuestro centro! </p>
+    <a href="https://www.imf-formacion.com/"><img src="Proyectoinicial/IMFLOGO.jpg" /> </a>
+<section>
+    <h2 class="azul1">Tablas</h2>
+    <p>&lt;TABLE&gt; Estructura &gt;&lt;/TABLE&gt;</p>
+<ul>
+    <li>La Estructura de la tabla está formada por tres tipos de elementos</li>
+    <li>Filas: &gt;&lt;TR&gt;Celdas &gt;&lt;/TR&gt; </li>
+    <li>Celdas de encabezado: &gt;&lt;TH&gt;Texto &gt;&lt;TH&gt;</li>
+    <li>Celdas normales: &gt;&lt;TD&gt;Texto &gt;&lt;TD&gt;</li>
+</ul>
+    <p>Atributos de la etiqueta &lt;TABLE&gt; </p>
+    <p>Bordes de la celdas: border="pixels"</p>
+<div class="central">
+<table >
+    <caption><b><p>&lt;TABLE&gt;</p>
+        <p class="red">&lt;TR&gt;</p></b>
+    </caption>
+        <tr> 
+        <td>&lt;TD&gt;&lt;/TD&gt;</td> <td>&lt;TD&gt;&lt;/TD&gt;<p>&lt;TR&gt;</p></td> <td>&lt;TD&gt;&lt;/TD&gt;</td></tr>
+        <tr><td>&lt;TD&gt;&lt;/TD&gt;</td> <td>&lt;TD&gt;&lt;/TD&gt;<p>&lt;TR&gt;</p></td> <td>&lt;TD&gt;&lt;/TD&gt;</td></tr>
+        <tr><th><p></p></th><th><p class="red">&lt;/TR&gt;</p><p>&lt;/TABLE&gt;</p></th><th><p></p></th></tr>
+</table>
+</div>
+    <p>Las celdas pueden ocupar más de una fila o columna</p>
+    <p><strong>Atributos de las etiquetas &lt;DT&gt;&lt; y &lt;TH&gt;&lt;</strong></p>
+    <p>Ocupar más de una columna: colspan="numero"</p>
+    <p>Ocupar más de una fila: rowspan="numero"</p>
+    <p><strong>Observaciones</strong></p>
+    <p>Siempre desde la celda en la que se indica el atributo y haca la derecha(para las columnas) o hacia abajo (para las filas)</p>
+    <p>Se puede combinar la expansión por filas y por columnas</p>
+    <p>Se generan errores si dos expansiones ocupan una misma celda</p>
 </section>
 <div class="central">
     <div id="change">
         <p>&lt;TABLE border="1"&gt;</p>
         <p>&lt;TR&gt;&lt;TD&gt;A&lt;/TD&gt; &lt;TD colspan="2"&gt;B&lt;/TD&gt;&lt;/TR&gt;</p>
         <p>&lt;TR&gt;&lt;TD&gt;C&lt;/TD&gt; &lt;TD&gt;D&lt;/TD&gt;</p>
-            <p>&lt;TD rowspan="2"&gt;E&lt;/TD&gt;&lt;/TR&gt;</p>
+        <p>&lt;TD rowspan="2"&gt;E&lt;/TD&gt;&lt;/TR&gt;</p>
         <p>&lt;TR&gt;&lt;TD colspan="2"&gt;F&lt;/TD&gt;&lt;/TR&gt;</p>
         <p>&lt;/TABLE&gt;</p>
     </div> 
 </div>
-     
+</div>
 
 <footer id="main-footer">
     <p>&copy; 2020 <a href="">Fernando Paiva</a></p>
