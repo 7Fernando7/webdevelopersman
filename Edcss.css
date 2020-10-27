@@ -1,0 +1,50 @@
+table {
+  width: 60%;
+  height: 30%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 18px;
+}
+td {
+  border: 2px solid black;
+}
+
+.rectangulo {
+  width: 200px;
+  height: 70px;
+  border: 1px solid #555;
+  background: #0080c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.rectangulo1 {
+  width: 200px;
+  height: 70px;
+  border: 1px solid #555;
+  background: #0080c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.parent {
+  display: flex;
+
+  margin-bottom: 30px;
+  padding: 10px 0;
+  text-align: center;
+}
+.parent1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  text-align: center;
+  justify-content: center;
+}
+.between {
+  justify-content: space-between;
+}
